@@ -73,11 +73,23 @@ namespace projectExam
 
         private void modifier_Click(object sender, RoutedEventArgs e)
         {
+            etudiant someEtudiant = new etudiant
+            {
+                CNE = 123,
+                Nom = "John",
+                Prénom = "Doe",
+                Sexe = "femme",
+                Date_Naissance = DateTime.Parse("1990-01-01"),
+                Adresse = "casa",
+                Tele = 07353962,
+                Id_filiere = 2,
+            };
             if (dataGrid.SelectedItem != null)
             {
-
+                etudiant et = dataGrid.SelectedItem as etudiant;
+                modifyStudent mod = new modifyStudent(et);
+                mod.Show();
             }
-            
         }
 
         private void chargerDatagrid()

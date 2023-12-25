@@ -36,3 +36,16 @@ C:\Users\hp\source\repos\projectExam\obj\x86\Debug\UserControl1.g.cs
 C:\Users\hp\source\repos\projectExam\bin\Debug\Telerik.Windows.Controls.GridView.dll
 C:\Users\hp\source\repos\projectExam\bin\Debug\Telerik.Windows.Controls.GridView.xml
 C:\Users\hp\source\repos\projectExam\obj\x86\Debug\UserControl1.baml
+C:\Users\hp\source\repos\projectExam\obj\x86\Debug\modifyStudent.g.cs
+C:\Users\hp\source\repos\projectExam\obj\x86\Debug\modifyStudent.baml
+C:\Users\hp\source\repos\projectExam\obj\x86\Debug\GestionFiliere.g.cs
+C:\Users\hp\source\repos\projectExam\bin\Debug\Telerik.Windows.Controls.Navigation.dll
+C:\Users\hp\source\repos\projectExam\bin\Debug\Telerik.Windows.Controls.Navigation.xml
+C:\Users\hp\source\repos\projectExam\obj\x86\Debug\GestionFiliere.baml
+C:\Users\hp\source\repos\projectExam\obj\x86\Debug\Carousel2.g.cs
+C:\Users\hp\source\repos\projectExam\obj\x86\Debug\Carousel2.baml
+C:\Users\hp\source\repos\projectExam\bin\Debug\Syncfusion.Licensing.dll
+C:\Users\hp\source\repos\projectExam\bin\Debug\Syncfusion.SfChart.WPF.dll
+C:\Users\hp\source\repos\projectExam\bin\Debug\Syncfusion.SfChart.WPF.xml
+C:\Users\hp\source\repos\projectExam\obj\x86\Debug\Statistique.g.cs
+C:\Users\hp\source\repos\projectExam\obj\x86\Debug\Statistique.baml

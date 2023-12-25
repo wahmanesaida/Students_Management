@@ -33,7 +33,8 @@
             <telerik:RadComboBoxItem Content="Item 3"/>
         </telerik:RadComboBox>
 
-        <telerik:RadButton x:Name="modifier"  Content="Modifier" Height="NaN" Margin="460,300,150,0" VerticalAlignment="Top" Width="100" Click="modifier_Click" Visibility="Visible"/>
+        <telerik:RadButton  Content="Modifier" Height="NaN" Margin="460,300,150,0" VerticalAlignment="Top" Width="100" Click="modifier_Click" Visibility="Visible"/>
+        <GridSplitter HorizontalAlignment="Left" Height="414" Margin="295,10,0,0" VerticalAlignment="Top" Width="5" Background="#FF751313"/>
 
 
     </Grid>

@@ -31,14 +31,14 @@ namespace projectExam
 
         private void Button_click1(object sender, RoutedEventArgs e)
         {
-            UserControl1 userControl1 = new UserControl1();
-            myframe.Navigate(userControl1);
+            Carousel2 carousel2 = new Carousel2();
+            myframe.Navigate(carousel2);
         }
 
         private void Button_click2(object sender, RoutedEventArgs e)
         {
-            UserControl1 userControl1 = new UserControl1();
-            myframe.Navigate(userControl1);
+            Statistique st = new Statistique();
+            myframe.Navigate(st);
         }
     }
 }

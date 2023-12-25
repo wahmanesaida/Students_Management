@@ -438,6 +438,8 @@ namespace projectExam
 		
 		private string _Nom_filiere;
 		
+		private string _Responsable;
+		
 		private EntitySet<etudiant> _etudiant;
 		
     #region Définitions de méthodes d'extensibilité
@@ -448,6 +450,8 @@ namespace projectExam
     partial void OnId_filiereChanged();
     partial void OnNom_filiereChanging(string value);
     partial void OnNom_filiereChanged();
+    partial void OnResponsableChanging(string value);
+    partial void OnResponsableChanged();
     #endregion
 		
 		public filiere()
@@ -492,6 +496,26 @@ namespace projectExam
 					this._Nom_filiere = value;
 					this.SendPropertyChanged("Nom_filiere");
 					this.OnNom_filiereChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Responsable", DbType="VarChar(255)")]
+		public string Responsable
+		{
+			get
+			{
+				return this._Responsable;
+			}
+			set
+			{
+				if ((this._Responsable != value))
+				{
+					this.OnResponsableChanging(value);
+					this.SendPropertyChanging();
+					this._Responsable = value;
+					this.SendPropertyChanged("Responsable");
+					this.OnResponsableChanged();
 				}
 			}
 		}

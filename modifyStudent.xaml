@@ -1,0 +1,25 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:projectExam"
+        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" x:Class="projectExam.modifyStudent"
+        mc:Ignorable="d"
+        Title="modifyStudent" Height="450" Width="800">
+    <Grid Background="Black">
+
+        <telerik:RadDataForm HorizontalAlignment="Center" VerticalAlignment="Center" Height="250" Width="440"/>
+        <TextBox HorizontalAlignment="Center" FontWeight="Bold" Margin="0,31,0,0" TextWrapping="Wrap" Text="Fenetre de modification des étudiants" VerticalAlignment="Top" Width="414" Height="35" Foreground="#FF650404" FontSize="20"/>
+        <telerik:RadButton Click="validate" Background="#FFFFFFFF" FontWeight="Bold" Content="Valider" HorizontalAlignment="Center" Height="34" Margin="0,373,0,0" VerticalAlignment="Top" Width="166" Foreground="#FF650404" FontSize="20"/>
+        <Label Content="CNE"  HorizontalAlignment="Left" Margin="212,148,0,0" VerticalAlignment="Top"  Width="53" RenderTransformOrigin="-0.264,0.791"/>
+        <TextBox HorizontalAlignment="Left" x:Name="cne" Margin="400,148,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <Label Content="Nom"  HorizontalAlignment="Left" Margin="212,179,0,0" VerticalAlignment="Top"/>
+        <Label Content="prénom"  HorizontalAlignment="Left" Margin="212,212,0,0" VerticalAlignment="Top"/>
+        <Label Content="Date de naissance"  HorizontalAlignment="Left" Margin="212,250,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" x:Name="nom" Margin="400,183,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" x:Name="prenom" Margin="400,217,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" x:Name="DateN" Margin="400,254,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>

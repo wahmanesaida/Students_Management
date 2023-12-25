@@ -20,6 +20,7 @@
     <Type Name="filiere">
       <Column Name="Id_filiere" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="Nom_filiere" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Responsable" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
       <Association Name="filiere_etudiant" Member="etudiant" ThisKey="Id_filiere" OtherKey="Id_filiere" Type="etudiant" />
     </Type>
   </Table>
