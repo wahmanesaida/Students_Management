@@ -1,0 +1,19 @@
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:projectExam"
+    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+    x:Class="projectExam.GestionEtudiantsAccueil"
+    mc:Ignorable="d"
+    Title="Acceuil" Background="Black" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Horizontal" Background="White" Margin="10,10,10,10" VerticalAlignment="Top">
+            <telerik:RadButton FontWeight="Bold" Background="Black" Foreground="Red" Content="Gestion des étudiants" Margin="10" Height="46" Width="150" Click="Button_click"/>
+            <telerik:RadButton FontWeight="Bold" Background="Black" Foreground="Red" Content="Gestion de filière" Margin="10" Height="46" Width="150"  Click="Button_click1"/>
+            <telerik:RadButton FontWeight="Bold" Background="Black" Foreground="Red" Content="Statistique" Margin="10" Height="46" Width="150"  Click="Button_click2"/>
+        </StackPanel>
+        <Frame x:Name="myframe" Margin="10,70,10,10" Background="#FFB36A6A"/>
+    </Grid>
+</Window>

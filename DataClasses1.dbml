@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="GestionEtudiantFiliere" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-5F91A78\SQLEXPRESS01;Initial Catalog=GestionEtudiantFiliere;Integrated Security=True" SettingsObjectName="projectExam.Properties.Settings" SettingsPropertyName="GestionEtudiantFiliereConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.etudiant" Member="etudiant">
+    <Type Name="etudiant">
+      <Column Name="CNE" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nom" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Prénom" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Sexe" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Date_Naissance" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Adresse" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Tele" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Id_filiere" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Id_Niveau" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="image_profile" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="filiere_etudiant" Member="filiere" ThisKey="Id_filiere" OtherKey="Id_filiere" Type="filiere" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.filiere" Member="filiere">
+    <Type Name="filiere">
+      <Column Name="Id_filiere" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nom_filiere" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="filiere_etudiant" Member="etudiant" ThisKey="Id_filiere" OtherKey="Id_filiere" Type="etudiant" />
+    </Type>
+  </Table>
+</Database>
